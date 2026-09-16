@@ -503,9 +503,8 @@ footer { background: var(--bg-alt); border-top: 1px solid var(--border); padding
   .nav-links.open li:nth-child(7) { animation-delay: .21s; }
   .nav-links.open li:nth-child(8) { animation-delay: .24s; }
   .nav-links.open li:nth-child(9) { animation-delay: .27s; }
-  .nav-links a { display: block; width: 100%; padding: 16px 18px; font-size: 17px; font-weight: 600; border-bottom: 1px solid var(--border); border-radius: 0; }
-  .nav-links a[aria-current="page"] { border-radius: 999px; border-bottom-color: transparent; }
-  .nav-links a.nav-download { display: flex; margin-left: 0; margin-top: 24px; justify-content: center; padding: 16px 18px; font-size: 16px; border-bottom: none; border-radius: 999px; }
+  .nav-links a { display: block; width: 100%; padding: 16px 18px; font-size: 17px; font-weight: 600; border-radius: 999px; }
+  .nav-links a.nav-download { display: flex; margin-left: 0; margin-top: 24px; justify-content: center; padding: 16px 18px; font-size: 16px; }
   .nav-toggle { display: flex; }
 }
 

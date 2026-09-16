@@ -489,7 +489,7 @@ footer { background: var(--bg-alt); border-top: 1px solid var(--border); padding
 }
 
 @media (max-width: 1100px) {
-  .nav-links { position: fixed; top: var(--nav-h); left: 0; right: 0; bottom: 0; background: var(--bg); flex-direction: column; align-items: stretch; padding: 20px; gap: 4px; transform: translateX(100%); transition: transform .3s ease; overflow-y: auto; }
+  .nav-links { position: fixed; top: var(--nav-h); left: 0; right: 0; height: calc(100vh - var(--nav-h)); background: var(--bg); flex-direction: column; align-items: stretch; justify-content: flex-start; padding: 20px; gap: 4px; transform: translateX(100%); transition: transform .3s ease; overflow-y: auto; }
   .nav-links.open { transform: translateX(0); }
   .nav-links a { padding: 14px 16px; }
   .nav-links a.nav-download { margin-left: 0; margin-top: 10px; justify-content: center; }

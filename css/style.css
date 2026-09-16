@@ -489,11 +489,28 @@ footer { background: var(--bg-alt); border-top: 1px solid var(--border); padding
 }
 
 @media (max-width: 1100px) {
-  .nav-links { position: fixed; top: var(--nav-h); left: 0; right: 0; height: calc(100vh - var(--nav-h)); background: var(--bg); flex-direction: column; align-items: stretch; justify-content: flex-start; padding: 20px; gap: 4px; transform: translateX(100%); transition: transform .3s ease; overflow-y: auto; }
+  .nav-links { position: fixed; top: var(--nav-h); left: 0; right: 0; height: calc(100vh - var(--nav-h)); background: var(--bg); flex-direction: column; align-items: stretch; justify-content: flex-start; padding: 24px 20px; gap: 0; transform: translateX(100%); transition: transform .3s ease; overflow-y: auto; }
   .nav-links.open { transform: translateX(0); }
-  .nav-links a { padding: 14px 16px; }
-  .nav-links a.nav-download { margin-left: 0; margin-top: 10px; justify-content: center; }
+  .nav-links li { opacity: 0; }
+  .nav-links.open li { animation: navItemIn .4s ease forwards; }
+  .nav-links.open li:nth-child(1) { animation-delay: .03s; }
+  .nav-links.open li:nth-child(2) { animation-delay: .06s; }
+  .nav-links.open li:nth-child(3) { animation-delay: .09s; }
+  .nav-links.open li:nth-child(4) { animation-delay: .12s; }
+  .nav-links.open li:nth-child(5) { animation-delay: .15s; }
+  .nav-links.open li:nth-child(6) { animation-delay: .18s; }
+  .nav-links.open li:nth-child(7) { animation-delay: .21s; }
+  .nav-links.open li:nth-child(8) { animation-delay: .24s; }
+  .nav-links.open li:nth-child(9) { animation-delay: .27s; }
+  .nav-links a { display: block; width: 100%; padding: 16px 18px; font-size: 17px; font-weight: 600; border-bottom: 1px solid var(--border); border-radius: 0; }
+  .nav-links a[aria-current="page"] { border-radius: 999px; border-bottom-color: transparent; }
+  .nav-links a.nav-download { display: flex; margin-left: 0; margin-top: 24px; justify-content: center; padding: 16px 18px; font-size: 16px; border-bottom: none; border-radius: 999px; }
   .nav-toggle { display: flex; }
+}
+
+@keyframes navItemIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @media (max-width: 760px) {

@@ -264,7 +264,7 @@ button { font-family: inherit; cursor: pointer; }
   filter: drop-shadow(0 24px 40px rgba(19, 79, 44, 0.28));
 }
 @media (max-width: 600px) {
-  .phone-img-wrap { height: 360px; }
+  .phone-img-wrap { height: 430px; }
 }
 .phone-img.is-compact { height: 96%; }
 
